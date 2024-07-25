@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <p class="logo">Portfolio</p>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="./image.jpg" alt="Profile Picture of D. Naveen Babu">
+            <h1 class="head">Welcome to My Portfolio</h1>
+            <p>Hello, I'm <span class="col">D. Naveen Babu</span>,</p>
+            <p>A passionate <span class="col">Web developer.</span></p>
+            <div class="hire-btn"><a href="#contact">Hire me</a></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="details">
+            <h3>Education:</h3>
+            <p>Bachelor of Technology, Computer Science, SRM AP, Amaravati (2022-2026).</p>
+            <p>Intermediate, Narayana Jr College, Nellore (2020-2022).</p>
+            <h3>Skills:</h3>
+            <p>HTML, CSS, JavaScript, React.js, Java, C, SQL, PHP.</p>
+            <h3>Interests:</h3>
+            <p>Reading, programming, traveling, photography.</p>
+        </div>
+        <ul>
+            <li class="links"><a href="https://github.com/naveen924611" target="_blank">GitHub</a></li>
+            <li class="links"><a href="https://www.linkedin.com/in/dabbugottu-naveen-babu-a39225259/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <a href="https://sprightly-lollipop-ee0f06.netlify.app" target="_blank"><div class="project">
+            <h3>Project 1</h3>
+            <p>Calculator: A basic calculator performing essential arithmetic operations with a user-friendly interface.</p>
+        </div></a>
+        <a href="https://naveen924611.github.io/tic_tak_toe/" target="_blank"><div class="project">
+            <h3>Project 2</h3>
+            <p>Tic-Tac-Toe Web Application: A simple yet engaging implementation of the classic game with responsive design and two-player mode.</p>
+        </div></a>
+        <a href="https://naveen924611.github.io/weather-app/" target="_blank"><div class="project">
+            <h3>Project 3</h3>
+            <p>Weather App: Provides accurate and up-to-date weather information using React and the OpenWeather API.</p>
+        </div></a>
+        <a href="https://naveen924611.github.io/To-Do/" target="_blank"><div class="project">
+            <h3>Project 4</h3>
+            <p>To-Do Application: Helps users manage tasks with features to add, edit, and delete tasks.</p>
+        </div></a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button id="submit" type="submit">Send</button>
+        </form>
+        <ul>
+            <li><a href="mailto:nn9331949@gmail.com">Email</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 D. Naveen Babu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

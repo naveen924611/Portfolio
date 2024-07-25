@@ -1,0 +1,348 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-decoration: none;
+ 
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.logo{
+    position: absolute;
+    left:-134px ;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: id 4s infinite ease-in-out;
+
+}
+
+@keyframes id {
+ 0%{
+    left:-134px ;
+    
+ }
+ 50%{
+    left: 10px;
+ }
+ 99%{
+    left: 10px;
+ }
+ 100%{
+    left:-134px ;
+ }
+}
+
+/* Header Styles */
+header {
+    background: rgba(172, 170, 170, 0.388);
+    color: #0f0e0e;
+    padding: 8px 0;
+    text-align: center;
+    position: sticky;
+    border-radius: 15px;
+    top: 0;
+    z-index: 1000;
+}
+
+.head {
+    animation: color 3s infinite ease-in;
+}
+
+@keyframes color {
+    0% { color: rgba(184, 132, 173, 0.6); }
+    20% { color: #383636; }
+    40% { color: rgb(112, 10, 146); }
+    60% { color: rgb(71, 92, 13); }
+    80% { color: #1583a8; }
+    100% { color: rgba(184, 132, 173, 0.6); }
+}
+
+.col {
+    display: inline-block;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em 0;
+}
+
+nav ul li {
+    margin: 0 2em;
+}
+
+nav ul li a {
+    color: #383636;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+nav ul li a:focus {
+    outline: 2px solid #f39c12;
+}
+
+/* Section Styles */
+section {
+    padding: 4em 1em;
+    text-align: center;
+    background: #fff;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    height: 500px;
+    text-align: left;
+}
+.intro{
+    padding: 0px 40px;
+}
+.intro p {
+    font-size: 30px;
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.hire-btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.hire-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hire-btn:hover {
+    transform: scale(1.2);
+}
+
+.hire-btn:focus {
+    outline: 2px solid #f39c12;
+}
+
+/* About and Contact Links */
+#about ul, #contact ul {
+   margin-top: 20px;
+    padding: 0;
+}
+
+#about ul li, #contact ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+#about ul li a, #contact ul li a {
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+#about ul li a:hover, #contact ul li a:hover {
+    background-color: #0f0e0e;
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+#about ul li a:focus, #contact ul li a:focus {
+    outline: 2px solid #f39c12;
+}
+
+/* Project Styles */
+.project {
+    margin: 2em 0;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projects a{
+    color: #0f0e0e;
+    
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+}
+
+/* Contact Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.7em 1.4em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #f39c12;
+}
+
+form button:focus {
+    outline: 2px solid #f39c12;
+}
+
+/* Image Style */
+.intro img {
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(227, 8, 8, 0.674);
+    position: absolute;
+    right: 15%;
+    animation: bor 3s infinite;
+}
+@keyframes bor {
+    0%{
+        box-shadow: 0 4px 8px 2px rgba(227, 8, 8, 0.674);
+    }
+    20%{
+        box-shadow: 0 4px 8px rgba(8, 55, 227, 0.674);
+    }
+    40%{
+        box-shadow: 0 4px 8px rgba(117, 227, 8, 0.674);
+    }
+    60%{
+        box-shadow: 0 4px 8px rgba(136, 8, 227, 0.674);
+    }
+    80%{
+        box-shadow: 0 4px 8px rgba(220, 227, 8, 0.674);
+        
+    }
+    100%{
+        box-shadow: 0 4px 8px rgba(227, 8, 8, 0.674);
+    }
+    
+}
+
+.details{
+    text-align: left;
+   padding: 12px 6px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 8px 4px;
+    background-color: #f2e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .intro img {
+        width: 150px;
+        height: 200px;
+        right: 10%;
+    }
+}
